@@ -27,17 +27,20 @@ body{
 p.a{
   font-family: "Times New Roman", Times, serif;
   margin:0;
-   padding:0;
+  padding:0;
+  size:20px;
 }
 p.b {
   font-family: "Courier New", Courier, monospace;
   margin:0;
    padding:0;
+   size:20px;
 }
 p.c{
   font-family: Courier;
   margin:0;
    padding:0;
+   size:20px;
   }
  section{
    background-repeat:none;
@@ -50,15 +53,35 @@ p.c{
     padding:20px;
     background-color:#1A1A1A
  }
- video{
-   margin: auto;
-   width: 560px;
-   height: 315px;
-   border-radius: 20px;
- }
  section.b{
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   
  }
+ video {
+  margin: auto;
+  border-radius: 20px;
+  height: 315px;
+  width: 560px;
+
+ }
+ iframe {
+ height: 315px;
+ width: 560px;
+ }
+ 
+ @media screen and (max-width:1767px){
+  video {
+ 
+  width:30%;
+  height:30%;
+ }
+ iframe {
+  width:30%;
+  height:30%;
+ }
+ 
+
+ }
+ 
